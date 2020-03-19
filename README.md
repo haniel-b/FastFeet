@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img height="300" alt="GoStack" src="./.github/logo.png" />
+    <img height="300" alt="GoStack" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-header.png" />
 </h1>
 
 <h3 align="center">
