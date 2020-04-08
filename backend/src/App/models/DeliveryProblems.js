@@ -5,6 +5,8 @@ class DeliveryProblems extends Model {
     super.init(
       {
         description: Sequelize.STRING,
+        start_date: Sequelize.DATE,
+        end_date: Sequelize.DATE,
       },
       {
         sequelize,
@@ -15,7 +17,10 @@ class DeliveryProblems extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.OrderManagement, { foreignKey: 'id' });
+    this.belongsTo(models.OrderManagement, {
+      foreignKey: 'id',
+      as: 'delivery_id',
+    });
   }
 }
 export default DeliveryProblems;
