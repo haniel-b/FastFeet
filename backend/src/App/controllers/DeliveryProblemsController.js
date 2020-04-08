@@ -21,21 +21,20 @@ class DeliveryProblemsController {
   }
 
   async store(req, res) {
-    const deliveryID = req.params;
+    const schema = Yup.object().shape({
+      delivery_id: Yup.number().required(),
+      description: Yup.string().required(),
+    });
 
-    console.log({ deliveryID });
-
-    const problemStore = await OrderManagement.findByPk(deliveryID);
-
-    if (!problemStore) {
-      return res
-        .status(400)
-        .json({ error: "There's no ID registered in your name" });
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Wrong informations' });
     }
 
-    const { description } = await problemStore.create(req.body);
+    const { delivery_id, description } = await DeliveryProblems.create(
+      req.body
+    );
 
-    return res.json({ description });
+    return res.json({ delivery_id, description });
   }
 
   async delete(req, res) {
