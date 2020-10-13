@@ -1,18 +1,3 @@
-<h1 align="center">
-    <img alt="GoStack" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-header.png" width="200px" />
-</h1>
-
-<h3 align="center">
-  Facebook Interface Simulation
-</h3>
-
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
-
-</p>
-
 ## FastFeet  
 
 This is my final project using all technologies learned for front-end, back-end and mobile. It was proposed by [**Rocketseat**](https://rocketseat.com.br/)  in order to put all the knowledge acquired in the course into practice and as a final exam to guarantee the conclusion certificate.
